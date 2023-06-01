@@ -4,7 +4,7 @@ import Card from '../Card/Card';
 function Cards({characters, onClose}) {
 
    return(
-         <div>
+         <div className={style.container}>
             {
             characters.map(({id, name, species, gender, image}) => {
                return <Card
